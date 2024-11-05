@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="logo.png" alt="Volleyball Logo" width="50">
+                <span>Lomba Voli</span>
+            </div>
+            <div class="navbar-burger">
+                <div class="menu-icon" id="menu-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul id="nav-links">
+                    <li><a href="#anon">Pengunguman</a></li>
+                    <li><a href="#rules">Aturan</a></li>
+                    <li><a href="/register.html">Registrasi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body">
+        <main>
+            <section>
+                <article id="anon">
+                    <h2>Pengunguman Turnamen Bola Volly</h2>
+                    <p>Dalam rangka memperingati Milad Kampung Atu Lintang, kami mengundang seluruh warga Kampung Atu Lintang dan sekitarnya untuk berpartisipasi dalam Turnamen Bola Voli Antar-Kampung. Acara ini diselenggarakan sebagai ajang silaturahmi dan mempererat persaudaraan antar warga.
+                    </p>
+                </article>
+    
+                <article id="aturan">
+                    <h2>Aturan Lomba</h2>
+                    <ul>
+                        <li>Peserta adalah tim bola voli yang terdiri dari 12 orang (6 pemain inti dan 6 cadangan).</li>
+                        <li>Setiap tim wajib mengenakan seragam tim selama pertandingan.</li>
+                        <li>Pendaftaran dilakukan melalui posko panitia di Balai Desa Atu Lintang, dengan biaya pendaftaran sebesar Rp100.000 per tim.</li>
+                        <li>Semua pertandingan akan mengikuti aturan resmi yang berlaku dengan sistem gugur.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Hadiah</h2>
+                    <ul>
+                        <li>Juara 1: Trofi, sertifikat, dan uang pembinaan</li>
+                        <li>Juara 2: Trofi, sertifikat, dan uang pembinaan</li>
+                        <li>Juara 3: Trofi, sertifikat, dan uang pembinaan</li>
+                        <li>Penghargaan khusus untuk Pemain Terbaik dan Tim Fair Play</li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <h2>Lokasi</h2>
+                    <ul>
+                        <li>Tempat: Lapangan Bola Voli Kampung Atu Lintang</li>
+                        <li>Alamat: Dusun Tengah, Kampung Atu Lintang</li>
+                        <li>Tanggal: 15 - 20 Desember 2024</li>
+                    </ul>
+                    <p> Lapangan Bola Voli Kampung Atu Lintang terletak di pusat desa dan mudah dijangkau oleh peserta dan penonton. Lokasi ini dipilih untuk memberikan kenyamanan bagi pemain dan penonton, serta memudahkan akses bagi warga sekitar yang ingin berpartisipasi dalam kemeriahan acara.
+                    </p>
+                </article>
+            </section>
+    
+            <aside>
+                <h2>Images Of Volleyball</h2>
+                <div class="gallery">
+                    <img src="Images/img1.png" alt="Volleyball Game 1">
+                    <img src="Images/img2.png" alt="Volleyball Game 2">
+                </div>
+            </aside>
+        </main>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Volleyball World. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

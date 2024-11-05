@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <section id="registration">
+        <article>
+            <h2>Formulir Pendaftaran Turnamen Bola Voli</h2>
+            <p>Isi formulir berikut untuk mendaftar tim Anda dalam Turnamen Bola Voli Kampung Atu Lintang. Pastikan semua informasi sudah benar sebelum mengirimkan formulir.</p>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="team-name">Nama Tim</label>
+                    <input type="text" id="team-name" name="team-name" required placeholder="Masukkan nama tim">
+                </div>
+                
+                <div class="form-group">
+                    <label for="captain-name">Nama Kapten Tim</label>
+                    <input type="text" id="captain-name" name="captain-name" required placeholder="Masukkan nama kapten tim">
+                </div>
+    
+                <div class="form-group">
+                    <label for="contact">Nomor Kontak Kapten</label>
+                    <input type="tel" id="contact" name="contact" required placeholder="Masukkan nomor kontak" pattern="[0-9]{10,15}" title="Nomor telepon harus berisi antara 10 hingga 15 digit">
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email Kapten Tim</label>
+                    <input type="email" id="email" name="email" required placeholder="Masukkan email">
+                </div>
+    
+                <div class="form-group">
+                    <label for="team-members">Daftar Anggota Tim</label>
+                    <textarea id="team-members" name="team-members" rows="4" required placeholder="Tuliskan nama-nama anggota tim (1-12 pemain)"></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <label for="payment-proof">Bukti Pembayaran (Rp100.000)</label>
+                    <input type="file" id="payment-proof" name="payment-proof" accept="image/*,application/pdf" required>
+                </div>
+    
+                <button type="submit" class="submit-btn">Daftar Tim</button>
+            </form>
+        </article>
+    </section>
+    
+</body>
+</html>
